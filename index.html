@@ -3,90 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hexed Runner: The Endless Rush</title>
+    <title>Hexed Runner - Official Site</title>
     <style>
+        /* --- HORROR THEME CSS --- */
         body {
-            background-color: #1a0505; /* Dark Red/Black Horror BG */
-            color: #f0f0f0;
-            font-family: 'Courier New', Courier, monospace; /* Spooky font style */
-            text-align: center;
+            background-color: #0a0a0a; /* Almost Black */
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(180deg, #1a0505 0%, #0a0a0a 100%);
+            padding: 60px 20px;
+            border-bottom: 2px solid #330000;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            color: #ff3333; /* Blood Red */
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin: 0;
+            text-shadow: 3px 3px 0px #000;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            color: #888;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* Main Container */
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 40px 20px;
         }
-        h1 {
-            font-size: 3em;
-            color: #ff3333; /* Blood Red */
-            text-shadow: 2px 2px 0px #000;
-            margin-bottom: 10px;
-        }
-        .subtitle {
-            font-size: 1.2em;
-            color: #aaa;
-            margin-bottom: 40px;
-        }
-        .download-btn {
-            background-color: #00cc44; /* Play Store Green */
-            color: white;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
+
+        /* Buttons */
+        .btn {
             display: inline-block;
-            margin-bottom: 50px;
-            box-shadow: 0 4px 15px rgba(0, 204, 68, 0.3);
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.2s;
         }
-        .download-btn:hover {
-            background-color: #009933;
+        .btn-play {
+            background-color: #00cc44;
+            color: white;
+            box-shadow: 0 0 15px rgba(0, 204, 68, 0.4);
         }
+        .btn-video {
+            background-color: #333;
+            color: white;
+            border: 1px solid #555;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        /* Gallery / Screenshots Section */
+        .gallery {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .screenshot-placeholder {
+            width: 250px;
+            height: 450px; /* Portrait Aspect Ratio */
+            background-color: #1a1a1a;
+            border: 2px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            border-radius: 10px;
+        }
+        /* Use this class if you upload real images later */
+        .screenshot-img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 1px solid #444;
+        }
+
+        /* Features List */
         .features {
             text-align: left;
-            background: #2a0a0a;
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid #441111;
-        }
-        .footer {
+            background: #111;
+            padding: 30px;
+            border-radius: 15px;
             margin-top: 50px;
-            font-size: 0.8em;
+            border-left: 5px solid #ff3333;
+        }
+        .features li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 80px;
+            padding: 40px;
+            background-color: #050505;
+            border-top: 1px solid #222;
+            font-size: 0.9em;
             color: #666;
         }
-        a { color: #ff6666; }
+        footer a {
+            color: #888;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover { color: #fff; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>HEXED RUNNER</h1>
-        <p class="subtitle">The Endless Rush. Survive the Horror.</p>
+    <header>
+        <h1>Hexed Runner</h1>
+        <p class="tagline">The Endless Rush. Survive the Curse.</p>
+        
+        <div style="margin-top: 30px;">
+            <a href="#" class="btn btn-video">▶ Watch Trailer</a>
+            <a href="#" class="btn btn-play">Get it on Google Play</a>
+        </div>
+    </header>
 
-        <a href="#" class="download-btn">Available Soon on Google Play</a>
+    <div class="container">
+        
+        <p style="font-size: 1.2em; line-height: 1.6;">
+            You are trapped in a nightmare. Run, dodge, and survive the endless obstacles in this 
+            fast-paced horror runner. Featuring an original 3D character and atmospheric sound design.
+        </p>
+
+        <div class="gallery">
+            <div class="screenshot-placeholder">Screenshot 1<br>(Coming Soon)</div>
+            <div class="screenshot-placeholder">Screenshot 2<br>(Coming Soon)</div>
+            <div class="screenshot-placeholder">Screenshot 3<br>(Coming Soon)</div>
+        </div>
 
         <div class="features">
-            <h3>💀 About the Game</h3>
-            <p>Enter a world of darkness. Run as fast as you can to escape the curse. Hexed Runner is a unique endless runner featuring original 3D characters and a chilling atmosphere.</p>
-            
+            <h3 style="color: #ff3333; margin-top: 0;">💀 Game Features</h3>
             <ul>
-                <li>Original 3D Horror Character</li>
-                <li>Dark, Atmospheric World</li>
-                <li>Challenging Traps & Obstacles</li>
-                <li>Endless Gameplay</li>
+                <li><strong>Endless Horror:</strong> The longer you run, the faster it gets.</li>
+                <li><strong>Unique 3D Art:</strong> Custom-modeled characters and environments.</li>
+                <li><strong>Health System:</strong> Watch out for traps! -10 Health on impact.</li>
+                <li><strong>Original Soundtrack:</strong> Immersive audio experience.</li>
             </ul>
         </div>
 
-        <div class="footer">
-            <p>Developed by VectorXYZ</p>
-            <p>
-                <a href="https://doc-hosting.flycricket.io/hexed-runner-the-endless-rush-privacy-policy/a9e263c9-94f2-46de-9625-87c3c90f6624/privacy">Privacy Policy</a> | 
-                <a href="mailto:vectorxyzstudio@gmail.com">Contact Support</a>
-            </p>
-        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2025 VectorXYZ Games</p>
+        <br>
+        <a href="https://doc-hosting.flycricket.io/hexed-runner-the-endless-rush-privacy-policy/a9e263c9-94f2-46de-9625-87c3c90f6624/privacy">Privacy Policy</a>
+        |
+        <a href="mailto:vectorxyzstudio@gmail.com">Contact Support</a>
+        |
+        <a href="app-ads.txt">AdMob Verification (app-ads.txt)</a>
+    </footer>
 
 </body>
 </html>
