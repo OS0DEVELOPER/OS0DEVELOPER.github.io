@@ -1,186 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hexed Runner - Official Site</title>
-    <style>
-        /* --- HORROR THEME CSS --- */
-        body {
-            background-color: #0a0a0a; /* Almost Black */
-            color: #e0e0e0;
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        /* Use this class if you upload real images later */
-        .screenshot-img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            border: 1px solid #444;
-        }
-        /* Header Section */
-        header {
-            background: linear-gradient(180deg, #1a0505 0%, #0a0a0a 100%);
-            padding: 60px 20px;
-            border-bottom: 2px solid #330000;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VectorXYZ Games</title>
 
-        h1 {
-            font-size: 3.5em;
-            color: #ff3333; /* Blood Red */
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            margin: 0;
-            text-shadow: 3px 3px 0px #000;
-        }
+<style>
 
-        .tagline {
-            font-size: 1.2em;
-            color: #888;
-            margin-top: 10px;
-            font-style: italic;
-        }
+body{
+background:#0a0a0a;
+color:white;
+font-family:Arial;
+margin:0;
+text-align:center;
+}
 
-        /* Main Container */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
+header{
+padding:60px;
+background:#111;
+border-bottom:2px solid #333;
+}
 
-        /* Buttons */
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            margin: 10px;
-            font-size: 1.1em;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: transform 0.2s;
-        }
-        .btn-play {
-            background-color: #00cc44;
-            color: white;
-            box-shadow: 0 0 15px rgba(0, 204, 68, 0.4);
-        }
-        .btn-video {
-            background-color: #333;
-            color: white;
-            border: 1px solid #555;
-        }
-        .btn:hover {
-            transform: scale(1.05);
-            filter: brightness(1.1);
-        }
+h1{
+color:#ff3333;
+font-size:50px;
+}
 
-        /* Gallery / Screenshots Section */
-        .gallery {
-            margin-top: 50px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .screenshot-placeholder {
-            width: 250px;
-            height: 450px; /* Portrait Aspect Ratio */
-            background-color: #1a1a1a;
-            border: 2px solid #333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #555;
-            border-radius: 10px;
-        }
-        /* Use this class if you upload real images later */
-        .screenshot-img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            border: 1px solid #444;
-        }
+.games{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:50px;
+}
 
-        /* Features List */
-        .features {
-            text-align: left;
-            background: #111;
-            padding: 30px;
-            border-radius: 15px;
-            margin-top: 50px;
-            border-left: 5px solid #ff3333;
-        }
-        .features li {
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
+.game-card{
+background:#111;
+width:260px;
+border-radius:10px;
+overflow:hidden;
+border:1px solid #333;
+transition:0.3s;
+}
 
-        /* Footer */
-        footer {
-            margin-top: 80px;
-            padding: 40px;
-            background-color: #050505;
-            border-top: 1px solid #222;
-            font-size: 0.9em;
-            color: #666;
-        }
-        footer a {
-            color: #888;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        footer a:hover { color: #fff; }
-    </style>
+.game-card:hover{
+transform:scale(1.05);
+}
+
+.game-card img{
+width:100%;
+}
+
+.game-card h3{
+margin:10px;
+}
+
+.btn{
+display:inline-block;
+padding:10px 20px;
+background:#00cc44;
+color:white;
+text-decoration:none;
+margin-bottom:20px;
+border-radius:5px;
+}
+
+footer{
+margin-top:80px;
+padding:40px;
+background:#050505;
+color:#777;
+}
+
+</style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Hexed Runner</h1>
-        <p class="tagline">The Endless Rush. Survive the Curse.</p>
-        
-        <div style="margin-top: 30px;">
-            <a href="#" class="btn btn-video">▶ Watch Trailer</a>
-            <a href="https://play.google.com/store/apps/details?id=com.VectorXYZ.SkyRunner3D" class="btn btn-play">Get it on Google Play</a>
-        </div>
-    </header>
+<header>
+<h1>VectorXYZ Games</h1>
+<p>Indie Horror & Adventure Games</p>
+</header>
 
-    <div class="container">
-        
-        <p style="font-size: 1.2em; line-height: 1.6;">
-            You are trapped in a nightmare. Run, dodge, and survive the endless obstacles in this 
-            fast-paced horror runner. Featuring an original 3D character and atmospheric sound design.
-        </p>
+<h2>Our Games</h2>
 
-        <div class="gallery">
-           <img src="ss1.jpeg" class="screenshot-img" alt="Game Screenshot 1">
-           <img src="ss2.jpeg" class="screenshot-img" alt="Game Screenshot 2">
-           <img src="ss3.jpeg" class="screenshot-img" alt="Game Screenshot 3">
-        </div>
+<div class="games">
 
-        <div class="features">
-            <h3 style="color: #ff3333; margin-top: 0;">💀 Game Features</h3>
-            <ul>
-                <li><strong>Endless Horror:</strong> The longer you run, the faster it gets.</li>
-                <li><strong>Unique 3D Art:</strong> Custom-modeled characters and environments.</li>
-                <li><strong>Health System:</strong> Watch out for traps! -10 Health on impact.</li>
-                <li><strong>Original Soundtrack:</strong> Immersive audio experience.</li>
-            </ul>
-        </div>
+<div class="game-card">
+<img src="hexed.jpg">
+<h3>Hexed Runner</h3>
+<a href="hexed-runner.html" class="btn">View Game</a>
+</div>
 
-    </div>
+<div class="game-card">
+<img src="sky.jpg">
+<h3>Sky Runner 3D</h3>
+<a href="sky-runner.html" class="btn">View Game</a>
+</div>
 
-    <footer>
-        <p>&copy; 2025 VectorXYZ Games</p>
-        <br>
-        <a href="https://doc-hosting.flycricket.io/hexed-runner-the-endless-rush-privacy-policy/a9e263c9-94f2-46de-9625-87c3c90f6624/privacy">Privacy Policy</a>
-        |
-        <a href="mailto:vectorxyzstudio@gmail.com">Contact Support</a>
-        |
-        <a href="app-ads.txt">AdMob Verification (app-ads.txt)</a>
-    </footer>
+</div>
+
+<footer>
+
+<p>© 2025 VectorXYZ Games</p>
+
+<a href="https://play.google.com/store/apps/dev?id=6168666643047266286">
+Developer Page
+</a>
+
+</footer>
 
 </body>
 </html>
