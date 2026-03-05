@@ -1,114 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VectorXYZ Games</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VectorXYZ Games - Official Studio Site</title>
+    <style>
+        /* --- STUDIO THEME CSS --- */
+        body {
+            background-color: #050505;
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        /* Header Section */
+        header {
+            background: linear-gradient(180deg, #1a0505 0%, #050505 100%);
+            padding: 60px 20px;
+            border-bottom: 2px solid #330000;
+        }
 
-<style>
+        h1 {
+            font-size: 3.5em;
+            color: #ff3333;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin: 0;
+            text-shadow: 3px 3px 0px #000;
+        }
 
-body{
-background:#0a0a0a;
-color:white;
-font-family:Arial;
-margin:0;
-text-align:center;
-}
+        .tagline {
+            font-size: 1.2em;
+            color: #888;
+            margin-top: 10px;
+            font-style: italic;
+        }
 
-header{
-padding:60px;
-background:#111;
-border-bottom:2px solid #333;
-}
+        /* Main Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
 
-h1{
-color:#ff3333;
-font-size:50px;
-}
+        /* Game Grid (For Multiple Games) */
+        .game-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
 
-.games{
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
-margin-top:50px;
-}
+        /* Individual Game Cards */
+        .game-card {
+            background-color: #111;
+            border: 1px solid #333;
+            border-radius: 10px;
+            width: 350px;
+            padding: 30px 20px;
+            transition: transform 0.3s, border-color 0.3s;
+            border-top: 4px solid #ff3333;
+        }
 
-.game-card{
-background:#111;
-width:260px;
-border-radius:10px;
-overflow:hidden;
-border:1px solid #333;
-transition:0.3s;
-}
+        .game-card:hover {
+            transform: translateY(-5px);
+            border-color: #ff3333;
+        }
 
-.game-card:hover{
-transform:scale(1.05);
-}
+        .game-title {
+            font-size: 2em;
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
 
-.game-card img{
-width:100%;
-}
+        .game-desc {
+            color: #aaa;
+            font-size: 1em;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            height: 80px; /* Keeps buttons aligned */
+        }
 
-.game-card h3{
-margin:10px;
-}
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.2s, filter 0.2s;
+            width: 80%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        
+        .btn-play {
+            background-color: #00cc44;
+            color: white;
+            box-shadow: 0 0 15px rgba(0, 204, 68, 0.3);
+        }
+        
+        .btn-info {
+            background-color: #333;
+            color: white;
+            border: 1px solid #555;
+        }
 
-.btn{
-display:inline-block;
-padding:10px 20px;
-background:#00cc44;
-color:white;
-text-decoration:none;
-margin-bottom:20px;
-border-radius:5px;
-}
+        .btn:hover {
+            transform: scale(1.05);
+            filter: brightness(1.2);
+        }
 
-footer{
-margin-top:80px;
-padding:40px;
-background:#050505;
-color:#777;
-}
-
-</style>
+        /* Footer */
+        footer {
+            margin-top: 80px;
+            padding: 40px;
+            background-color: #050505;
+            border-top: 1px solid #222;
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        footer a {
+            color: #888;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        footer a:hover { color: #fff; }
+    </style>
 </head>
-
 <body>
 
-<header>
-<h1>VectorXYZ Games</h1>
-<p>Indie Horror & Adventure Games</p>
-</header>
+    <header>
+        <h1>VectorXYZ Games</h1>
+        <p class="tagline">Independent Game Development Studio</p>
+    </header>
 
-<h2>Our Games</h2>
+    <div class="container">
+        
+        <div class="game-grid">
+            
+            <div class="game-card">
+                <h2 class="game-title">Patient Z</h2>
+                <p class="game-desc">A terrifying first-person psychological survival horror game. Confront your past and survive the abandoned clinic.</p>
+                <a href="patient-z.html" class="btn btn-info">View Game Details</a>
+            </div>
 
-<div class="games">
+            <div class="game-card">
+                <h2 class="game-title">Hexed Runner</h2>
+                <p class="game-desc">The Endless Rush. Survive the Curse. Run, dodge, and survive endless obstacles in this fast-paced horror runner.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.VectorXYZ.SkyRunner3D" class="btn btn-play" target="_blank">Get it on Google Play</a>
+            </div>
 
-<div class="game-card">
-<img src="hexed.jpg">
-<h3>Hexed Runner</h3>
-<a href="hexed-runner.html" class="btn">View Game</a>
-</div>
+        </div>
 
-<div class="game-card">
-<img src="sky.jpg">
-<h3>Sky Runner 3D</h3>
-<a href="sky-runner.html" class="btn">View Game</a>
-</div>
+    </div>
 
-</div>
-
-<footer>
-
-<p>© 2025 VectorXYZ Games</p>
-
-<a href="https://play.google.com/store/apps/dev?id=6168666643047266286">
-Developer Page
-</a>
-
-</footer>
+    <footer>
+        <p>&copy; 2026 VectorXYZ Games. All rights reserved.</p>
+        <br>
+        <a href="https://doc-hosting.flycricket.io/hexed-runner-the-endless-rush-privacy-policy/a9e263c9-94f2-46de-9625-87c3c90f6624/privacy" target="_blank">Privacy Policy</a>
+        |
+        <a href="mailto:vectorxyzstudio@gmail.com">Contact Support</a>
+        |
+        <a href="app-ads.txt">AdMob Verification (app-ads.txt)</a>
+    </footer>
 
 </body>
 </html>
